@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Claude Code themes: 7 animated cyberpunk themes for the desktop app</title>
-<meta name="description" content="Seven pixel-art cyberpunk themes for the Claude Code desktop app. Each one puts an animated scene behind your chat and recolours the app. Free, open source, one command to switch.">
+<meta name="description" content="Eight pixel-art cyberpunk themes for the Claude Code desktop app. Each one puts an animated scene behind your chat and recolours the app. Free, open source, one command to switch.">
 <link rel="canonical" href="https://nocashflow.github.io/claude-cyberpunk-themes/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cyberpunk Themes for Claude Code">
 <meta property="og:url" content="https://nocashflow.github.io/claude-cyberpunk-themes/">
 <meta property="og:title" content="Cyberpunk themes for Claude Code">
-<meta property="og:description" content="Seven animated pixel-art scenes with matching colours for the Claude Code desktop app. Free and open source.">
+<meta property="og:description" content="Eight animated pixel-art scenes with matching colours for the Claude Code desktop app. Free and open source.">
 <meta property="og:image" content="https://nocashflow.github.io/claude-cyberpunk-themes/share.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="640">
 <meta property="og:image:alt" content="The seven Claude Code cyberpunk themes side by side">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cyberpunk themes for Claude Code">
-<meta name="twitter:description" content="Seven animated pixel-art scenes with matching colours for the Claude Code desktop app.">
+<meta name="twitter:description" content="Eight animated pixel-art scenes with matching colours for the Claude Code desktop app.">
 <meta name="twitter:image" content="https://nocashflow.github.io/claude-cyberpunk-themes/share.png">
 <link rel="icon" href="icon.png" type="image/png">
 <meta name="theme-color" content="#000000">
@@ -31,7 +31,7 @@
       "@type": "SoftwareApplication",
       "name": "Cyberpunk Themes for Claude Code",
       "alternateName": "claude-cyberpunk-themes",
-      "description": "Seven pixel-art cyberpunk themes for the Claude Code desktop app. Each puts an animated scene behind the chat and recolours the app.",
+      "description": "Eight pixel-art cyberpunk themes for the Claude Code desktop app. Each puts an animated scene behind the chat and recolours the app.",
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "Claude Code plugin",
       "operatingSystem": "Windows, macOS",
@@ -48,7 +48,7 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How do I change the theme in Claude Code?", "acceptedAnswer": { "@type": "Answer", "text": "Install the plugin, then type /neon and a theme name in the Claude Code desktop app, for example /neon alley. /neon on its own lists all seven, and /neon off goes back to the normal look." } },
+        { "@type": "Question", "name": "How do I change the theme in Claude Code?", "acceptedAnswer": { "@type": "Answer", "text": "Install the plugin, then type /neon and a theme name in the Claude Code desktop app, for example /neon alley. /neon on its own lists all eight, and /neon off goes back to the normal look." } },
         { "@type": "Question", "name": "Do the themes work in the Claude chat app?", "acceptedAnswer": { "@type": "Answer", "text": "No. They are a Claude Code plugin, so they only show in the Code tab of the Claude desktop app. The Chat tab, claude.ai and the mobile app can't load plugins." } },
         { "@type": "Question", "name": "Do they work in the terminal or VS Code?", "acceptedAnswer": { "@type": "Answer", "text": "The /neon command works there, but the terminal and the VS Code extension don't draw backdrops, so you only see the themes in the desktop app." } },
         { "@type": "Question", "name": "Is the plugin safe to install?", "acceptedAnswer": { "@type": "Answer", "text": "It only changes how the app looks. It has no network, file or process access, and the one thing it saves is your theme choice. Run claude plugin validate on it to see every call it makes." } },
@@ -81,7 +81,7 @@
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-h">
     <div class="hero__words">
-      <h1 id="hero-h" class="hero__line">Seven cities. <br>Behind your chat.</h1>
+      <h1 id="hero-h" class="hero__line">Eight cities. <br>Behind your chat.</h1>
       <p class="hero__sub">Cyberpunk Themes for Claude Code: animated pixel-art scenes and a matching palette for the desktop app. Free, open source, one command.</p>
       <div class="cmd" data-copy-box>
         <code class="cmd__text">/plugin install cyberpunk-themes <span class="nb">--marketplace</span> <span class="nb">nocashflow/claude-cyberpunk-themes</span></code>
@@ -116,6 +116,7 @@
         <button type="button" class="picker__btn" data-pick="clinic" aria-pressed="false"><span style="--c:#4fe0b5"></span>Clinic</button>
         <button type="button" class="picker__btn" data-pick="badlands" aria-pressed="false"><span style="--c:#ff9f4a"></span>Badlands</button>
         <button type="button" class="picker__btn" data-pick="blackwall" aria-pressed="false"><span style="--c:#ff4f6d"></span>Blackwall</button>
+        <button type="button" class="picker__btn" data-pick="noodle" aria-pressed="false"><span style="--c:#ff3ea5"></span>Neon 2099</button>
         <button type="button" class="picker__btn" data-pick="corpo" aria-pressed="false"><span style="--c:#f2f2f5"></span>Corpo</button>
         <button type="button" class="picker__pause" data-auto aria-label="Pause the theme tour"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="i-pause" d="M5 3.5v9M11 3.5v9"/><path class="i-play" d="M5 3.5v9l7-4.5z"/></svg></button>
       </div>
@@ -128,15 +129,16 @@
   </section>
 
   <section class="worlds" id="worlds" aria-labelledby="worlds-h">
-    <h2 id="worlds-h" class="sec-h">The seven themes.</h2>
+    <h2 id="worlds-h" class="sec-h">The eight themes.</h2>
     <p class="sec-sub">Six for dark mode, one for light. Pick your district, choom.</p>
-    <div class="reel" data-reel tabindex="0" aria-label="The seven themes, one at a time">
+    <div class="reel" data-reel tabindex="0" aria-label="The eight themes, one at a time">
       <article class="world" id="theme-rooftop"><img src="themes/rooftop-still.svg" data-live="themes/rooftop.svg" alt="Neon Rooftop: a purple pixel city at night, two mascots on a roof watching the moon" loading="lazy"><div class="world__cap"><h3>Neon Rooftop</h3><p>Two mascots watch the moon while an ad blimp drifts past.</p><code>/neon rooftop</code></div></article>
       <article class="world" id="theme-alley"><img src="themes/alley-still.svg" data-live="themes/alley.svg" alt="Phosphor Alley: a rainy green alley, two mascots under an LED umbrella on a power line" loading="lazy"><div class="world__cap"><h3>Phosphor Alley</h3><p>Green rain and an LED umbrella on a power line.</p><code>/neon alley</code></div></article>
       <article class="world" id="theme-net"><img src="themes/net-still.svg" data-live="themes/net.svg" alt="Deep Net: blue cyberspace, a hexagon wall with a glowing breach and a netrunner on a platform" loading="lazy"><div class="world__cap"><h3>Deep Net</h3><p>A netrunner breaks through a wall of ICE.</p><code>/neon net</code></div></article>
       <article class="world" id="theme-clinic"><img src="themes/clinic-still.svg" data-live="themes/clinic.svg" alt="Ripperdoc: a green clinic, a doc fitting a chrome arm under a surgical lamp" loading="lazy"><div class="world__cap"><h3>Ripperdoc</h3><p>The doc fits a chrome arm. The monitor reads 72.</p><code>/neon clinic</code></div></article>
       <article class="world" id="theme-badlands"><img src="themes/badlands-still.svg" data-live="themes/badlands.svg" alt="Badlands: an orange desert at dusk, a striped sun and two nomads by their car" loading="lazy"><div class="world__cap"><h3>Badlands</h3><p>Two nomads by their car under a striped sun.</p><code>/neon badlands</code></div></article>
       <article class="world" id="theme-blackwall"><img src="themes/blackwall-still.svg" data-live="themes/blackwall.svg" alt="Blackwall: a black wall of code with red cracks, red eyes and a hooded runner" loading="lazy"><div class="world__cap"><h3>Blackwall</h3><p>Near-black with one red. Something is watching through the cracks.</p><code>/neon blackwall</code></div></article>
+      <article class="world" id="theme-noodle"><img src="themes/noodle-still.svg" data-live="themes/noodle.svg" alt="Neon 2099: a pink and cyan megacity in the rain, Claude coding on a hologram at a noodle bar counter and the cook behind it" loading="lazy"><div class="world__cap"><h3>Neon 2099</h3><p>Hot pink and cyan. Late noodles, a cable in Claude's back, rain that never stops.</p><code>/neon noodle</code></div></article>
       <article class="world world--light" id="theme-corpo"><img src="themes/corpo-still.svg" data-live="themes/corpo.svg" alt="Corpo Plaza: a white plaza with glass towers, a red hologram and a corpo in a suit" loading="lazy"><div class="world__cap"><h3>Corpo Plaza</h3><p>The light-mode one. Spotless, and a little too perfect.</p><code>/neon corpo</code></div></article>
     </div>
     <div class="reel__nav">
@@ -154,7 +156,7 @@
     </div>
     <ol class="steps">
       <li><strong>Paste it</strong> into the message box of the Claude Code desktop app and say <code>y</code> to the marketplace.</li>
-      <li><strong>Pick a theme</strong> with <code>/neon alley</code>. <code>/neon</code> on its own lists all seven.</li>
+      <li><strong>Pick a theme</strong> with <code>/neon alley</code>. <code>/neon</code> on its own lists all eight.</li>
       <li><strong>Switch whenever</strong> you like. Your pick sticks, and <code>/neon off</code> brings the normal look back.</li>
     </ol>
   </section>
@@ -196,7 +198,7 @@
   <section class="faq" id="faq" aria-labelledby="faq-h">
     <h2 id="faq-h" class="sec-h">Questions.</h2>
     <dl class="qa">
-      <div><dt>How do I change the theme in Claude Code?</dt><dd>Install the plugin, then type <code>/neon</code> and a theme name in the Claude Code desktop app, for example <code>/neon alley</code>. <code>/neon</code> on its own lists all seven, and <code>/neon off</code> goes back to the normal look.</dd></div>
+      <div><dt>How do I change the theme in Claude Code?</dt><dd>Install the plugin, then type <code>/neon</code> and a theme name in the Claude Code desktop app, for example <code>/neon alley</code>. <code>/neon</code> on its own lists all eight, and <code>/neon off</code> goes back to the normal look.</dd></div>
       <div><dt>Do the themes work in the Claude chat app?</dt><dd>No. They're a Claude Code plugin, so they only show in the Code tab of the Claude desktop app. The Chat tab, claude.ai and the mobile app can't load plugins.</dd></div>
       <div><dt>Do they work in the terminal or VS Code?</dt><dd>The <code>/neon</code> command works there, but the terminal and the VS Code extension don't draw backdrops, so you only see the themes in the desktop app.</dd></div>
       <div><dt>Is the plugin safe to install?</dt><dd>It only changes how the app looks. It has no network, file or process access, and the one thing it saves is your theme choice. Run <code>claude plugin validate</code> on it to see every call it makes.</dd></div>
@@ -207,7 +209,7 @@
   </section>
 
   <section class="close" aria-labelledby="close-h">
-    <h2 id="close-h" class="close__h">Seven cities. One command.</h2>
+    <h2 id="close-h" class="close__h">Eight cities. One command.</h2>
     <a class="pill" href="#install">Install the themes</a>
     <p class="close__sub">Free and MIT licensed. Stay preem, choom.</p>
   </section>

@@ -21,12 +21,13 @@ const EXAMPLES = {
   clinic: ['Add validation to the checkout form.', ['Every field now goes through one schema.', '14 new tests cover the edge cases.'], 'const Order = z.object({ qty: z.number().int() })'],
   badlands: ['Draft the release notes for v2.4.', ['Drafted from 37 merged pull requests,', 'grouped by area, breaking changes first.'], 'git log v2.3..HEAD --merges --oneline'],
   blackwall: ['Audit the auth middleware.', ['One finding: tokens were never checked', 'for expiry. Fixed, with a regression test.'], 'if (claims.exp < now()) throw new Unauthorized()'],
+  noodle: ['Cache the product search results.', ['Searches go through a 60-second cache now.', 'Repeat queries dropped from 310 ms to 4 ms.'], 'cache.wrap(query, () => search(query), { ttl: 60 })'],
   corpo: ['Make the dashboard accessible.', ['Contrast and focus order fixed, and every', 'chart now has a text summary.'], '<Chart aria-describedby="sales-summary" />'],
 }
 
 const GLASS = {
   rooftop: ['#110d24', 0.62], alley: ['#08180f', 0.64], net: ['#08102a', 0.62], clinic: ['#081613', 0.64],
-  badlands: ['#160c07', 0.62], blackwall: ['#08080a', 0.66], corpo: ['#f6f5f9', 0.74],
+  badlands: ['#160c07', 0.62], blackwall: ['#08080a', 0.66], noodle: ['#120a1e', 0.62], corpo: ['#f6f5f9', 0.74],
 }
 
 for (const scene of SCENES) writeFileSync(new URL(`themes/${scene.id}.svg`, out), scene.build())
@@ -118,13 +119,13 @@ function finale() {
       `<text x="${x + 4}" y="${y + th + 24}" font-family="${font}" font-size="16" fill="#ffffff" fill-opacity="0.85">${escape(scene.title)}</text></g>`
   }).join('')
   return `<g class="finale" style="animation-delay:${TITLE + SCENES.length * SEGMENT}s"><rect width="${W}" height="${H}" fill="#050507"/>` +
-    `<text x="${W / 2}" y="170" text-anchor="middle" font-family="${font}" font-size="64" font-weight="600" letter-spacing="-1.5" fill="#ffffff">Seven cities. One command.</text>` +
+    `<text x="${W / 2}" y="170" text-anchor="middle" font-family="${font}" font-size="64" font-weight="600" letter-spacing="-1.5" fill="#ffffff">Eight cities. One command.</text>` +
     `<text x="${W / 2}" y="226" text-anchor="middle" font-family="${mono}" font-size="22" fill="#9db4ff">/neon &lt;theme&gt;</text>${tiles}</g>`
 }
 
 const title = `<g class="title"><rect width="${W}" height="${H}" fill="#050507"/>` +
   `<text x="${W / 2}" y="${H / 2 - 20}" text-anchor="middle" font-family="${font}" font-size="88" font-weight="600" letter-spacing="-2.5" fill="#ffffff">Cyberpunk Themes</text>` +
-  `<text class="sub" x="${W / 2}" y="${H / 2 + 50}" text-anchor="middle" font-family="${font}" font-size="28" fill="#ffffff" fill-opacity="0.7">for Claude Code. Seven pixel worlds behind your chat.</text></g>`
+  `<text class="sub" x="${W / 2}" y="${H / 2 + 50}" text-anchor="middle" font-family="${font}" font-size="28" fill="#ffffff" fill-opacity="0.7">for Claude Code. Eight pixel worlds behind your chat.</text></g>`
 
 const style = `
 .seg,.title{opacity:0}
@@ -138,7 +139,7 @@ ${windowKeyframes('win-title', TITLE)}${windowKeyframes('win-seg', SEGMENT)}${wi
 
 const film = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-labelledby="t d">` +
   `<title id="t">Cyberpunk Themes for Claude Code</title>` +
-  `<desc id="d">A short looping film: a title card, then each of the seven themes (${SCENES.map(s => s.title).join(', ')}) behind an example conversation, then all seven side by side.</desc>` +
+  `<desc id="d">A short looping film: a title card, then each of the eight themes (${SCENES.map(s => s.title).join(', ')}) behind an example conversation, then all eight side by side.</desc>` +
   `<style>${style}</style><defs>${images}` +
   `<linearGradient id="shade-dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.75"/></linearGradient>` +
   `<linearGradient id="shade-light" x1="0" y1="0" x2="0" y2="1"><stop offset="0.55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.7"/></linearGradient></defs>` +

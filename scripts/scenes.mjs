@@ -5,6 +5,7 @@ import { deepNetSvg } from '../plugins/cyberpunk-themes/hooks/deepnet.ts'
 import { ripperdocSvg } from '../plugins/cyberpunk-themes/hooks/ripperdoc.ts'
 import { badlandsSvg } from '../plugins/cyberpunk-themes/hooks/badlands.ts'
 import { blackwallSvg } from '../plugins/cyberpunk-themes/hooks/blackwall.ts'
+import { neon2099Svg } from '../plugins/cyberpunk-themes/hooks/neon2099.ts'
 import { corpoPlazaSvg } from '../plugins/cyberpunk-themes/hooks/corpo.ts'
 
 export const SCENES = [
@@ -14,5 +15,6 @@ export const SCENES = [
   { id: 'clinic', title: 'Ripperdoc', colour: 'Green', mode: 'dark', build: ripperdocSvg },
   { id: 'badlands', title: 'Badlands', colour: 'Orange', mode: 'dark', build: badlandsSvg },
   { id: 'blackwall', title: 'Blackwall', colour: 'Black', mode: 'dark', build: blackwallSvg },
+  { id: 'noodle', title: 'Neon 2099', colour: 'Pink', mode: 'dark', build: neon2099Svg },
   { id: 'corpo', title: 'Corpo Plaza', colour: 'White', mode: 'light', build: corpoPlazaSvg },
 ]

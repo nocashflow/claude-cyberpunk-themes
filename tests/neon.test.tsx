@@ -15,6 +15,7 @@ const THEMES: [string, string, string][] = [
   ['clinic', 'Ripperdoc', 'ripperdoc'],
   ['badlands', 'Badlands', 'badlands'],
   ['blackwall', 'Blackwall', 'blackwall'],
+  ['noodle', 'Neon 2099', 'neon-2099'],
   ['corpo', 'Corpo Plaza', 'corpo-plaza'],
 ]
 
@@ -55,13 +56,13 @@ test('/neon <theme> works for every theme, by short name or by full title, in an
   }
 })
 
-test('/neon on its own lists all seven plus off and motion, and a typo lists them too', async ($, on) => {
+test('/neon on its own lists all eight plus off and motion, and a typo lists them too', async ($, on) => {
   mock.store(on)
   app(on)
   const list = await neon($)
   expect(list.startsWith('Themes:')).toBe(true)
   for (const [id, title] of THEMES) expect(list.includes(`/neon ${id}`) && list.includes(title)).toBe(true)
-  expect(list.split('\n').filter(line => line.startsWith('  /neon ')).length).toBe(9)
+  expect(list.split('\n').filter(line => line.startsWith('  /neon ')).length).toBe(10)
   expect(list.includes('/neon motion off')).toBe(true)
   expect((await neon($, 'alleyy')).startsWith('No theme named "alleyy". Themes:')).toBe(true)
 })

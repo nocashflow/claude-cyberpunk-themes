@@ -34,6 +34,7 @@ export const PALETTES: Record<string, Palette> = {
   clinic: dark('Ripperdoc', { accent: '#4fe0b5', danger: '#ff6b6b', success: '#8be36b', warning: '#f2b84b', pro: '#6fc3ff' }, ['#071311', '#0c1b18', '#11231f', '#162a26', '#e4f4ef', '#bcd8d0', '#9dbdb4'], 'github-dark'),
   badlands: dark('Badlands', { accent: '#ff9f4a', danger: '#ff5f56', success: '#9ad56b', warning: '#ffd166', pro: '#e07bd0' }, ['#140b06', '#1c110a', '#24160d', '#2c1b10', '#fbeee2', '#e3cdb8', '#c9ae95']),
   blackwall: dark('Blackwall', { accent: '#ff4f6d', danger: '#f04438', success: '#5fd39a', warning: '#f5b84a', pro: '#b9a3ff' }, ['#09090b', '#111113', '#18181b', '#1f1f23', '#f2f2f3', '#c7c7cc', '#a3a3ab']),
+  noodle: dark('Neon 2099', { accent: '#ff3ea5', danger: '#ff5a5a', success: '#3ee8a0', warning: '#ffcf4a', pro: '#29e3ff' }, ['#0d0815', '#150f20', '#191225', '#251c36', '#f7eefc', '#d1bedc', '#a592b3']),
   corpo: {
     label: 'Corpo Plaza',
     only: 'light',

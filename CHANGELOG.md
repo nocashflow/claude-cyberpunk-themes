@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- Neon 2099 (`/neon noodle`), a pink and cyan dark theme: a noodle bar at the foot of the megacity in the rain, with Claude coding on a hologram at the counter and the cook behind it.
+
 ## [1.1.0] - 2026-11-15
 
 ### Added

@@ -1,6 +1,6 @@
 # cyberpunk-themes
 
-Seven pixel-art cyberpunk themes for the Claude Code desktop app. Each one puts an animated scene behind your chat and recolours the app to match. They show up in the desktop app's Code tab.
+Eight pixel-art cyberpunk themes for the Claude Code desktop app. Each one puts an animated scene behind your chat and recolours the app to match. They show up in the desktop app's Code tab.
 
 Screenshots, the full story and the source for the website and build scripts are in the repository: https://github.com/nocashflow/claude-cyberpunk-themes
 
@@ -23,7 +23,7 @@ Say `y` to add the marketplace, then pick a scope. **user** makes the themes wor
 | `/neon off` | Back to the app's own look |
 | `/neon motion off` / `on` | Keeps the theme but stops the scene moving, or starts it again |
 
-The themes are `rooftop`, `alley`, `net`, `clinic`, `badlands`, `blackwall` (dark mode) and `corpo` (light mode).
+The themes are `rooftop`, `alley`, `net`, `clinic`, `badlands`, `blackwall`, `noodle` (dark mode) and `corpo` (light mode).
 
 ## What it does, exactly
 
@@ -50,7 +50,7 @@ It has no network, file, process, model or tool access, reads nothing about your
 
 - `hooks/register.tsx`: the hooks above.
 - `hooks/palettes.ts`: each theme's colours.
-- `hooks/scene.ts`, `alley.ts`, `deepnet.ts`, `ripperdoc.ts`, `badlands.ts`, `blackwall.ts`, `corpo.ts`: one scene each, written as pixel-art text maps.
+- `hooks/scene.ts`, `alley.ts`, `deepnet.ts`, `ripperdoc.ts`, `badlands.ts`, `blackwall.ts`, `neon2099.ts`, `corpo.ts`: one scene each, written as pixel-art text maps.
 - `hooks/kit.ts`, `hooks/extras.ts`: shared drawing helpers.
 - `hooks/make-colors.js` and `make-colors.d.ts`: Claude Code's own colour helper, copied in unchanged from its mod kit (see `NOTICE`). The long strings of hex in it are the app's colour scales written out back to back: colour values, not encoded data.
 

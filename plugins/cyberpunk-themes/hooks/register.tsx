@@ -13,6 +13,7 @@ import { blackwallSvg } from './blackwall'
 import { corpoPlazaSvg } from './corpo'
 import { deepNetSvg } from './deepnet'
 import { makeColors } from './make-colors.js'
+import { neon2099Svg } from './neon2099'
 import { PALETTES } from './palettes'
 import { ripperdocSvg } from './ripperdoc'
 import { neonRooftopSvg } from './scene'
@@ -32,6 +33,7 @@ const netColors = makeColors(PALETTES.net!)
 const clinicColors = makeColors(PALETTES.clinic!)
 const badlandsColors = makeColors(PALETTES.badlands!)
 const blackwallColors = makeColors(PALETTES.blackwall!)
+const noodleColors = makeColors(PALETTES.noodle!)
 const corpoColors = makeColors(PALETTES.corpo!)
 
 function look(id: string, title: string, blurb: string, colors: ReturnType<typeof makeColors>, scene: string, tint: string, opacity: number, svg: () => string, alt: string): Look {
@@ -60,6 +62,8 @@ const LOOKS: readonly Look[] = [
     'An orange desert at dusk: a striped sun behind mesas, a motel sign, two mascots by a nomad car'),
   look('blackwall', 'Blackwall', 'Black: the edge of the Net; red eyes in the cracks.', blackwallColors, 'blackwall', '#08080a', 0.52, blackwallSvg,
     'A black wall of code with red cracks and eyes, a red mask, a hooded runner and a drone'),
+  look('noodle', 'Neon 2099', 'Pink: a noodle bar under the megacity; Claude codes at the counter while the cook works.', noodleColors, 'neon-2099', '#120a1e', 0.48, neon2099Svg,
+    'A pink and cyan megacity in the rain: a noodle bar under neon signs, Claude on a stool coding on a hologram, a cook behind the counter'),
   look('corpo', 'Corpo Plaza', 'White, for light mode: a pristine plaza under a red hologram.', corpoColors, 'corpo-plaza', '#f6f5f9', 0.6, corpoPlazaSvg,
     'A white corporate plaza: glass towers, a red hologram emblem, a cherry tree, a corpo in a suit and a security bot'),
 ]

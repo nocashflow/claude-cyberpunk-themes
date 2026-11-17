@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="assets/launch.svg" width="100%" alt="Launch film: a title card, then each of the seven themes behind an example Claude Code conversation, then all seven side by side.">
+<img src="assets/launch.svg" width="100%" alt="Launch film: a title card, then each of the eight themes behind an example Claude Code conversation, then all eight side by side.">
 
 # Cyberpunk Themes for Claude Code
 
-**Custom Claude Code themes: seven little pixel-art cyberpunk worlds that live behind your chat. One command to switch between them.**
+**Custom Claude Code themes: eight little pixel-art cyberpunk worlds that live behind your chat. One command to switch between them.**
 
 I spend most of my day in the Claude Code desktop app and wanted it to feel less like a tool and more like a place, so I made this.
 
 [![Version](https://img.shields.io/badge/version-1.0.0-ff4f6d?style=flat-square)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-5cc8ff?style=flat-square)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-desktop%20mod-d97757?style=flat-square)](https://code.claude.com/docs/en/plugins/mods/overview)
-[![Themes](https://img.shields.io/badge/themes-7-4fe0b5?style=flat-square)](#the-themes)
+[![Themes](https://img.shields.io/badge/themes-8-4fe0b5?style=flat-square)](#the-themes)
 [![Contrast](https://img.shields.io/badge/text%20contrast-WCAG%20AAA-9d8cff?style=flat-square)](#accessibility)
 [![Audit](https://github.com/nocashflow/claude-cyberpunk-themes/actions/workflows/audit.yml/badge.svg)](https://github.com/nocashflow/claude-cyberpunk-themes/actions/workflows/audit.yml)
 
@@ -95,6 +95,13 @@ Say `y` to add the marketplace, then pick a scope. I'd go with **user**, so the 
       <br><sub>White · <b>light mode</b>. For the light-mode people. Spotless, a little too perfect, very corporate.</sub>
     </td>
   </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <img src="assets/themes/noodle.svg" width="66%" alt="Neon 2099: a pink and cyan megacity in the rain, a noodle bar under neon signs, Claude on a stool coding on a hologram and a cook behind the counter.">
+      <br><b>Neon 2099</b> &nbsp;<code>/neon noodle</code>
+      <br><sub>Pink · dark mode. Late noodles at the foot of the megacity. Claude codes at the counter, jacked in, while the cook keeps the pot going and the rain keeps falling.</sub>
+    </td>
+  </tr>
 </table>
 
 Every scene is animated: what you see above is exactly what the plugin draws. Each theme also recolours the whole app to match. Pick your district, choom.
@@ -110,6 +117,7 @@ Every scene is animated: what you see above is exactly what the plugin draws. Ea
 | **Ripperdoc** | The heart monitor (72 bpm, they're calm), eyes floating in jars, the IV drip, and sparks where the doc's tool hits the chrome. |
 | **Badlands** | Wind turbines turning, tail-lights on the highway, the motel arrow half working, a dust devil wandering across the flats, and the city way out on the horizon. |
 | **Blackwall** | Red eyes opening in the cracks, the glitching mask, a red security scan sweeping down, and the giant's visor breathing. |
+| **Neon 2099** | Claude typing while code scrolls on its hologram, pink pulses running down its cable, steam off the pot and the bowl, lanterns swaying, a delivery drone heading out with someone's order, and the signs streaking across the wet road. |
 | **Corpo Plaza** | The hologram logo slowly turning, a live stock ticker, petals drifting across everything, a security drone scanning the floor. |
 
 </details>
@@ -119,7 +127,7 @@ Every scene is animated: what you see above is exactly what the plugin draws. Ea
 | Command | What it does |
 | --- | --- |
 | `/neon` | Lists the themes. |
-| `/neon <theme>` | Switches theme: `rooftop`, `alley`, `net`, `clinic`, `badlands`, `blackwall` or `corpo`. |
+| `/neon <theme>` | Switches theme: `rooftop`, `alley`, `net`, `clinic`, `badlands`, `blackwall`, `noodle` or `corpo`. |
 | `/neon off` | Goes back to the app's normal look. |
 | `/neon motion off` | Keeps the theme but stops the scene moving. Easier on a laptop battery. `/neon motion on` brings it back. |
 
@@ -232,7 +240,7 @@ plugins/cyberpunk-themes/  the plugin itself, the only part that gets installed
     register.tsx         the /neon command, applying the theme, drawing the backdrop
     palettes.ts          every theme's colours
     kit.ts  extras.ts    pixel helpers and shared cyberpunk pieces
-    scene.ts  alley.ts  deepnet.ts  ripperdoc.ts  badlands.ts  blackwall.ts  corpo.ts
+    scene.ts  alley.ts  deepnet.ts  ripperdoc.ts  badlands.ts  blackwall.ts  neon2099.ts  corpo.ts
 scripts/
   audit.mjs              accessibility and safety checks (runs on every push)
   build-assets.mjs       renders the launch film and previews in this README
@@ -257,7 +265,7 @@ npm run build:assets
 ## FAQ
 
 **How do I change the theme in Claude Code?**
-Install the plugin (see [Install](#install)), then type `/neon` and a theme name in the Claude Code desktop app, like `/neon alley`. `/neon` on its own lists all seven, and `/neon off` goes back to the normal look.
+Install the plugin (see [Install](#install)), then type `/neon` and a theme name in the Claude Code desktop app, like `/neon alley`. `/neon` on its own lists all eight, and `/neon off` goes back to the normal look.
 
 **Do the themes work in the Claude chat app?**
 No. They're a Claude Code plugin, so they only show in the **Code tab** of the Claude desktop app. The Chat tab, claude.ai and the mobile app can't load plugins (yet, anyway).
